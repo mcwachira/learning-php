@@ -1,5 +1,6 @@
 <?php
 $output = null;
+date_default_timezone_set('Africa/Nairobi');
 
 // Get year
 $output = date('Y');
@@ -34,6 +35,7 @@ $output = date('a');
 
 // Get full date and time
 $output = date('Y-m-d h:i:s a');
+
 
 ?>
 
