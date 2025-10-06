@@ -1,5 +1,37 @@
 <?php
 $output = null;
+
+$fruits = [
+  ['Apple', 'Red'],
+  ['Orange', 'Orange'],
+  ['Banana', 'yellow'],
+];
+
+
+$users = [
+  [
+    'name' => 'John',
+    'email' => 'john@gmail.com',
+    'password' => '12345678',
+    'hobbies' => ['Tennis', 'video Games']
+  ],
+  [
+    'name' => 'James',
+    'email' => 'james@gmail.com',
+    'password' => '12345678',
+    'hobbies' => ['Tennis', 'video Games'],
+  ],
+  [
+    'name' => 'Jane',
+    'email' => 'jane@gmail.com',
+    'password' => '12345678',
+    'hobbies' => ['Tennis', 'video Games']
+  ]
+];
+
+
+$output = $users[0]['hobbies'][1];
+$fruits[] = ['Grape', 'Purple']
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +55,15 @@ $output = null;
       <!-- Output -->
       <p class="text-xl"><?= $output ?></p>
     </div>
+
+    <h2 class="text-xle font-semibold my-4">
+      Fruit Array:
+    </h2>
+    <p>
+    <pre>
+                    <?php print_r($users) ?>
+                </pre>
+    </p>
   </div>
 </body>
 
