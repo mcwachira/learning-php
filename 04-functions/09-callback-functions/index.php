@@ -1,0 +1,22 @@
+<?php
+$numbers = [1, 2, 3, 4, 5, 6];
+
+$square = function ($number) {
+    return $number * $number;
+};
+$squaredNumbers = array_map($square, $numbers);
+
+// print_r($squaredNumbers);
+
+function applyCallback($callback, $value)
+{
+    return $callback($value);
+}
+
+$double = function ($number) {
+    return $number * 2;
+};
+
+$result = applyCallback($double, 19);
+
+echo $result;
