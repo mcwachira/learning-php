@@ -50,6 +50,11 @@ $post = $stmt->fetch();
           <p class="text-gray-700 text-lg mt-2 mb-5"><?= $post['body']; ?></p>
           <a href="index.php">Go Back</a>
         </div>
+
+<!--          Edit Button   -->
+          <a href="edit.php?id=<?=$post['id']?>" class="bg-green-500 text-white px-4 py-2 rounded w-full text-center mb-4 hover:bg-green-600 focus:outline-none">
+              Edit
+          </a>
       </div>
       <form action="delete.php" method="post">
         <input type="hidden" name="_method" value="delete">
